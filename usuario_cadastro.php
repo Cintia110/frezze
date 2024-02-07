@@ -33,6 +33,8 @@ and open the template in the editor.
         <script src="js_bootstrap/bootstrap.min.js"></script>
     </head>
     <body>
+        <form action="usuario_salvar.php" method="post">
+
 
         <!-- CABEÇALHO -->
         <?php include 'header_admin.php' ?>
@@ -44,13 +46,13 @@ and open the template in the editor.
                
                 <ol>
                     <li>
-                        <input name="txtLoginUsuario" type="text" class="textbox" placeholder="Login do usuário"/></li>
+                        <input name = "txtLoginUsuario" type = "text" class = "textbox" placeholder = "Login do usuário"/></li>
 
                     <li>
-                        <input name="txtSenhaUsuario" type="password" class="textbox" placeholder="Senha do usuário"/></li>
+                        <input name = "txtSenhaUsuario" type = "password" class = "textbox" placeholder = "Senha do usuário"/></li>
                 
                     <li>
-                        <input name="btSalvar" value="Enviar" class="botao" />
+                        <input type = "sumbit" name = "btSalvar" value = "Enviar" class = "botao" />
                     </li>
 
                   
@@ -59,6 +61,7 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
+</form>
         <!-- RODAPÉ -->
         <?php include 'footer_admin.php' ?>
     </body>

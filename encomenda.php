@@ -41,7 +41,7 @@ and open the template in the editor.
         ?>
 
         <!-- CORPO -->
-        <form action="" method="post">
+        <form action="encomenda_salvar.php" method="post">
 
             <div id="body" class="contact">
                 <div class="footer">
@@ -101,9 +101,8 @@ and open the template in the editor.
                                     <?php
                                         $sql = "SELECT * FROM forma_pagamanto ORDER BY descricao";
                                         $resultado = retormarDados($sql);
-                                        while ($linha =mysqli_fetch_assoc($resultado))
+                                        while ($linha = mysqli_fetch_assoc($resultado))
                                         {
-                                            
 
                                     ?>
                                     <option value ="<?php echo $linha["descricao"]?>"> 
@@ -120,8 +119,6 @@ and open the template in the editor.
                                 <input type="submit" name="btSalvar"   value="Enviar"  class="botao" />
                             </li>
                         </ol>
-
-
 
                     </div>
 
